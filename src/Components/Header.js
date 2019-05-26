@@ -6,17 +6,17 @@ export default class Header extends Component {
          <header>
             <div className="container h-flex">
                 <a href="#" className="logo">
-                    <img src={logo} alt="logo Instagram"/>
+                    <img src={logo}/>
                 </a>
                 <nav className="links">
                 <ul>
                    <li>
-                       <a className="menu__links">
+                       <a href="#" className="menu__links">
                            Feed
                        </a>
                    </li>
                     <li>
-                        <a className="menu__links">
+                        <a href="#" className="menu__links">
                             Profile
                         </a>
                     </li>
