@@ -10,14 +10,12 @@ export default class Header extends Component {
                 </a>
                 <nav className="links">
                 <ul>
-                   <li>
-                       <a href="#" className="menu__links">
-                           Feed
-                       </a>
-                   </li>
+                    <li>
+                        <i className="far fa-heart fa-2x"></i>
+                    </li>
                     <li>
                         <a href="#" className="menu__links">
-                            Profile
+                            <i className="fas fa-cat fa-2x"></i>
                         </a>
                     </li>
                 </ul>
