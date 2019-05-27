@@ -1,3 +1,4 @@
+/*
 
 import React, {Component} from 'react';
 import Post from './Post';
@@ -12,11 +13,12 @@ export default class Posts extends Component {
         );
     }
 }
+*/
 
 
-/* FROM THE SECOND DAY OF WORKSHOP
 import React, {Component} from 'react';
 import User from './User';
+import Post from './Post';
 import InstaService from '../Services/InstaService';
 import ErrorMassage from '../Components/ErrorMassage'
 export default class Posts extends Component {
@@ -35,17 +37,14 @@ export default class Posts extends Component {
             .catch(this.onError)
        }
         onPostsLoaded = (posts) => {
-                this.setState({
-                    posts,
-                    error: false
-                })
-        };
+                this.setState({ posts })
+        }
 
         onError = (err) => {
         this.setState({
             error: true
         })
-        };
+        }
 
         renderItems(arr) {
             return arr.map((item) => {
@@ -67,8 +66,8 @@ export default class Posts extends Component {
                     {descr}
                 </div>
                     </div>
-                )
-            })
+                );
+            });
         }
     render() {
         const {error, posts} = this.state;
@@ -85,4 +84,3 @@ export default class Posts extends Component {
         );
     }
 }
-*/
